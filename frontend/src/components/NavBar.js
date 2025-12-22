@@ -20,7 +20,7 @@ const NavBar = () => {
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
             <span className="logo">
-              <img src="https://www.linkpicture.com/q/logo_356.png"></img>
+              <img src="/logo.png" alt="logo"></img>
             </span>
           </Link>
           <button
@@ -76,17 +76,7 @@ const NavBar = () => {
                   </Link>
                 </li>
               )}
-              {!auth.isLoggedIn && (
-                <li className="nav-item">
-                  <Link
-                    className="nav-link active"
-                    aria-current="page"
-                    to="/About"
-                  >
-                    <span className="text">About Us</span>
-                  </Link>
-                </li>
-              )}
+
               {!auth.isLoggedIn && (
                 <li className="nav-item">
                   <Link
@@ -113,8 +103,8 @@ const NavBar = () => {
             )} */}
           </div>
         </div>
-      </nav>
-    </div>
+      </nav >
+    </div >
   );
 };
 

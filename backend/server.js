@@ -9,7 +9,6 @@ const transRoutes = require("./routes/transactions");
 const app = express();
 const cors = require("cors");
 app.use(cors());
-
 app.use(bodyParser.json());
 
 app.use((req, res, next) => {
@@ -41,7 +40,7 @@ app.use((error, req, res, next) => {
 });
 
 
-const dbUrl ="mongodb+srv://SANJU:sanju_123456@cluster0.f8yjf.mongodb.net/FSD2Project?retryWrites=true&w=majority";
+const dbUrl ="mongodb://saisrikarreddyk20:srikar7382@ac-vnld57x-shard-00-00.hxkqmok.mongodb.net:27017,ac-vnld57x-shard-00-01.hxkqmok.mongodb.net:27017,ac-vnld57x-shard-00-02.hxkqmok.mongodb.net:27017/?ssl=true&replicaSet=atlas-vnqso4-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0";
 
 mongoose
   .connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true })

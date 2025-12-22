@@ -5,7 +5,7 @@ const Cards = (props) => {
   return (
     <>
       <div className="card">
-        <Card style={{ width: "18rem" }}>
+        <Card className="h-100">
           <Card.Img variant="top" src={props.img} />
           <Card.Body>
             <Card.Title>{props.title}</Card.Title>
